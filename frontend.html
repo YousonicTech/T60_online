@@ -1,0 +1,55 @@
+<head>
+  <meta charset="UTF-8">
+  <title>T60 Model</title>
+  <style>
+    .box {
+      text-align: center;
+      color: rgb(0, 0, 255)
+    }
+
+    .aligncenter {
+      clear: both;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+  <img src="https://user-images.githubusercontent.com/84035000/216243359-04c092b3-0237-40a8-aedf-7de726954880.png" height="175" width="400" alt="yousonic" class="aligncenter">
+  <h4 class="box"></h4>
+  <form action="/uploaded/" enctype="multipart/form-data" method="post">
+    <div style="text-align:center;vertical-align:middel;">
+      <b>文件选择</b>
+      <input name="files" type="file" multiple>
+      <input type="submit" value="开始测试" onclick="myFunction()">
+    </div>
+    <p style="text-align:center;vertical-align:middel;" id="demo">
+    <p>
+      <script>
+        function myFunction() {
+          var x = "请稍等，文件正在处理中..."
+          document.getElementById("demo").innerHTML = x
+        }
+      </script>
+  </form>
+  <div>
+    <p></p>
+    <br>
+    <p></p>
+    <br>
+    <div>
+      <b>使用说明</b>：选择上传文件后，点击提交，处理后将展示结果
+    </div>
+    <div>
+      <b>注意事项：请上传时间在10秒以上且小于2分钟的音频</b>
+    </div>
+
+    <!-- <div>
+      <b>Zip文件说明：</b>
+    </div>
+    <li> wav文件：将上传音频文件抽取为出音频文件</li>
+    <li> csv文件：将测试音频的1000hz t60值变化的数值保存到csv表格中 </li>
+    <li> png文件：以曲线的形式展示所上传音频1000hz t60的数值的变化情况 </li> -->
+    
+  </div>
+</body>

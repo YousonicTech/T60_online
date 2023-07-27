@@ -61,8 +61,8 @@ from fastapi.responses import HTMLResponse
 parser = argparse.ArgumentParser(description='manual to this script')
 parser.add_argument('--port', type=int, default = 60)
 def upload_oss(filename, file):
-    access_key_id = 'LTAI5tAzLJwWiQBHqX6ywLxa'
-    access_key_secret = 'R60PTPKqrMgPwli9dZjwL1Mp3xmCxR'
+    access_key_id = ''
+    access_key_secret = ''
     bucket_name = 'sti-user-file'
     endpoint = 'https://oss-cn-hangzhou.aliyuncs.com'
     auth = oss2.Auth(access_key_id, access_key_secret)
